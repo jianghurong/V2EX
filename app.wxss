@@ -1,0 +1,40 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.content {
+  margin: 20rpx;
+  border-bottom: 10rpx solid lightblue;
+}
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.username,.replyNum {
+  display: inline-block;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: .8em;
+  color: #666;
+}
+.refresh {
+  display: inline-block;
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
+  padding: 25rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 10rpx 1rpx lightblue;
+  background: #fff;
+}

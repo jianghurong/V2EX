@@ -1,0 +1,57 @@
+/* pages/article/article.wxss */
+.article-title {
+  margin: 20rpx;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.article-detail {
+  margin: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #999;
+}
+.article-info {
+  display: flex;
+  display: -webkit-flex;
+  margin: 0 20rpx;
+  align-content: center;
+}
+.member-avatar, .reply-member-avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border: 1rpx solid #999;
+  border-radius: 50%;
+}
+.member-username, .article-date, .article-reply, .reply-member-username, .reply-member-content {
+   margin: 0 20rpx;
+   font-size: 0.8em;
+}
+.reply-member-content {
+  font-size: 1em;
+}
+.article-date {
+  color: #666;
+}
+.article-reply {
+  color: #666;
+  margin-bottom: 20rpx;
+}
+/*评论样式*/
+.reply {
+  display: flex;
+  display: -webkit-flex;
+  margin: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #999;
+}
+.reply-member-info {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+}
+.reply-member-username {
+  color: purple;
+}
+image {
+  width: 100%;
+  height: auto;
+}

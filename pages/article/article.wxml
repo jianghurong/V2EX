@@ -1,0 +1,30 @@
+<!--pages/article/article.wxml-->
+<view>
+  <view class="article-content">
+    <view class="article-title">{{article.title}}</view>
+    <view class="article-info">
+      <image class="member-avatar" src="{{article.member.avatar_large}}" />
+      <view>
+        <view class="member-username">{{article.member.username}}</view>
+        <view class="article-date">{{articleDate}}</view>
+      </view>
+    </view>
+    <view class="article-detail">
+      <rich-text nodes="{{article.content_rendered}}"></rich-text>
+    </view>
+    <view class="article-reply">热门评论</view>
+    <view wx:for="{{replies}}" wx:key="*this">
+      <view class="reply">
+        <view>
+          <image class="reply-member-avatar" src="{{item.member.avatar_large}}" />
+        </view>
+        <view class="reply-member-info">
+          <view class="reply-member-username">{{item.member.username}}</view>
+          <view class="reply-member-content">
+            <rich-text nodes="{{item.content_rendered}}"></rich-text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

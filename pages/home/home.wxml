@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view wx:for="{{hotArticles}}" wx:key="*this">
+    <view class="content">
+      <view class="title" bindtap="goArticleContent" data-content="{{item}}">
+        {{item.title}}
+      </view>
+      <view class="username">{{item.member.username}}</view>
+      <view class="replyNum">{{item.replies}}评论</view>
+    </view>
+  </view>
+  <image class="refresh" src="../../images/refresh.png" bindtap="refreshArticle"/>
+</view>
