@@ -21,7 +21,7 @@
         <view class="reply-member-info">
           <view class="reply-member-username">{{item.member.username}}</view>
           <view class="reply-member-content">
-            <rich-text nodes="{{item.content_rendered}}"></rich-text>
+             <rich-text nodes="{{item.content_rendered}}"></rich-text> 
           </view>
         </view>
       </view>

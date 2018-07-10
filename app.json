@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/home/home",
+    "pages/nodes/nodes",
     "pages/lastest/lastest",
+    "pages/topics/topics",
     "pages/article/article",
     "pages/index/index",
     "pages/logs/logs"
@@ -23,6 +25,12 @@
       "text": "最新",
       "iconPath": "images/new.png",
       "selectedIconPath": "images/new.png"
+    }, {
+      "pagePath": "pages/nodes/nodes",
+      "text": "分类",
+      "iconPath": "images/node.png",
+      "selectedIconPath": "images/node.png"
     }]
-  }
+  },
+  "debug": false
 }

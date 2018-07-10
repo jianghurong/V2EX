@@ -5,9 +5,11 @@
   font-weight: bold;
 }
 .article-detail {
+  width: 710rpx;
   margin: 20rpx;
   padding-bottom: 20rpx;
   border-bottom: 1rpx solid #999;
+  overflow: scroll;
 }
 .article-info {
   display: flex;
@@ -26,7 +28,9 @@
    font-size: 0.8em;
 }
 .reply-member-content {
+  width: 596rpx;
   font-size: 1em;
+  overflow: scroll;
 }
 .article-date {
   color: #666;

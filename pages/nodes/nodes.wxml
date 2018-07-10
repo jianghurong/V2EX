@@ -1,0 +1,9 @@
+<!--pages/nodes/nodes.wxml-->
+<view>
+  <view wx:for="{{nodes}}" wx:key="{{item.id}}">
+    <view class="node" bindtap="goTopics" data-id="{{item.id}}" data-title="{{item.title}}">
+      {{item.title}}
+    </view>
+  </view>
+   <image class="refresh" src="../../images/refresh.png" bindtap="refreshTopics" />
+</view>

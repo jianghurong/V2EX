@@ -1,0 +1,6 @@
+/* pages/nodes/nodes.wxss */
+.node {
+  margin: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 10rpx solid lightblue;
+}
