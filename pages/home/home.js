@@ -7,13 +7,15 @@ Page({
    */
   data: {
     hotArticles: [],// 热门文章
+    hiddenShade: true,// 隐藏遮罩层
+    words: "こんにちは！",
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getHotArticle()
+    this.getHotArticle();
   },
   /**
    * @getHotArticle 获取热门文章
@@ -43,6 +45,14 @@ Page({
    */
   refreshArticle: function () {
     this.getHotArticle()
+  },
+  /**
+   * @hiddenShade 隐藏遮罩层
+   */
+  hiddenShade: function () {
+    this.setData({
+      hiddenShade: true
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

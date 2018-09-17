@@ -1,6 +1,8 @@
 <!--pages/home/home.wxml-->
-<view>
-  <view wx:for="{{hotArticles}}" wx:key="*this">
+<view catchtouchmove="{{!hiddenShade}}" >
+
+
+  <view wx:for="{{hotArticles}}" wx:key="{{item.id}}">
     <view class="content">
       <view class="title" bindtap="goArticleContent" data-content="{{item}}">
         {{item.title}}
@@ -9,5 +11,8 @@
       <view class="replyNum">{{item.replies}}评论</view>
     </view>
   </view>
-  <image class="refresh" src="../../images/refresh.png" bindtap="refreshArticle"/>
+  <image class="refresh" src="../../images/refresh.png" bindtap="refreshArticle" />
+  <view class="shade" hidden="{{hiddenShade}}" bindtap="hiddenShade">
+  </view>
+  <view class="shade-words" hidden="{{hiddenShade}}">{{words}}</view>
 </view>

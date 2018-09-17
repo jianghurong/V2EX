@@ -1,1 +1,49 @@
 /* pages/home/home.wxss */
+
+.shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 3;
+  opacity: 0.3;
+}
+
+.shade-words {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 300rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  z-index: 5;
+  overflow: hidden;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  /* color: #fff;  */
+  animation: large 2s ease-in-out;
+  -webkit-animation: large 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes large {
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+}
+@-webkit-keyframes large {
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+}
